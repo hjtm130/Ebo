@@ -1,0 +1,101 @@
+body {
+  background-image: url(image/background.jpg);
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+   
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #464646;
+  position: relative;
+  backdrop-filter:blur(10px);
+}
+head :before {
+    content: '';
+    background: inherit;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.content {
+  display: flex;
+}
+
+.menu {
+  background-color: #862040;
+}
+.menu ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.menu li {
+  /*margin-left: 5%;*/
+  list-style: none;
+  color: #DBDBDB;
+}
+/*
+.gauge {
+  width: 80%;
+  height: 20px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+.gauge-value {
+  height: 20px;
+  background-color:deeppink;
+  border-radius: 10px;
+}*/
+.ikemen {
+  /*background-color: aquamarine;*/
+}
+.ikemen img {
+  width: auto;
+  max-width: 100%;
+  height:auto;
+  max-height: 100%;
+}
+.client {
+  /*background-color: #1d1d1d4f;*/
+  width:70%;
+  /*padding: 0.2em 0.5em;*/
+  margin: 0 1em;
+  background: #00000056;
+  color: #DBDBDB;
+  box-shadow: 0px 0px 0px 5px #862040;
+  /*border: dashed 2px #3b3b3b
+  border-radius: 8px;*/
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+}
+.select img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

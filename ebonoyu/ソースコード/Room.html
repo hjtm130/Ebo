@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="design.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title> ゑぼの湯 </title>
+    </head>
+
+    <body>
+        <div class="menu">
+            <ul>
+                <li><a href="./Room.html">Room</a></li>
+            </ul>
+        </div>
+
+        <div class="select">
+            <button type="submit" onclick="select('1')"><img src="image/ikemen1.jpg"></button>
+            <button type="submit" onclick="select('2')"><img src="image/ikemen2.jpg"></button>
+            <button type="submit" onclick="select('3')"><img src="image/ikemen3.jpg"></button>
+            <script>
+                function select(num) {
+                    console.log(num);
+                    location.href="./client" + num + ".html";
+                }
+            </script>
+        </div>
+    </body>
+
+</html>
